@@ -24,6 +24,10 @@ export const metadata = {
   authors: [{ name: "Clement Motel team" }],
   creator: "Clement Motel",
   publisher: "Clement Motel",
+  icons: {
+    icon: '/images/logo.png',
+    apple: '/images/logo.png',
+  },
   formatDetection: {
     email: false,
     address: false,

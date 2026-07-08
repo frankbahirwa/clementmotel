@@ -4,10 +4,14 @@ export default function sitemap() {
   const routes = [
     '',
     '/about',
+    '/contact',
+    '/faq',
     '/rooms',
+    '/events',
+    '/gallery',
     '/offers',
     '/restaurant',
-    '/contact',
+    '/amenities',
     '/book',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
