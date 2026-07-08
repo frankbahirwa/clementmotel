@@ -70,7 +70,7 @@ const Navbar = () => {
           </div>
 
           {/* Socials: Dark Angled Section (Right on desktop, Left on mobile) */}
-          <div className="relative flex items-center bg-primary text-white px-4 md:px-10 py-1 angled-left md:angled-right -ml-4 md:-ml-0 md:-mr-6">
+          <div className="relative flex items-center bg-primary text-white px-4 md:px-10 py-1 angled-left md:angled-right -ml-4 md:ml-0 md:-mr-6">
             <span className="hidden md:inline text-[15px] capitalize tracking-[0.2em] mr-8 opacity-70">Follow Us</span>
             <div className="flex items-center gap-4 md:gap-5">
               {[

@@ -111,7 +111,7 @@ const VideoHighlight = () => {
           {/* ── Right: Video ── */}
           <div className="relative group">
             {/* Decorative shadow frame */}
-            <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-accent/30 via-transparent to-accent/10 p-px pointer-events-none" />
+            <div className="absolute -inset-px rounded-2xl bg-linear-to-br from-accent/30 via-transparent to-accent/10 p-px pointer-events-none" />
             <div className="absolute -inset-3 rounded-2xl border border-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-zinc-200 bg-zinc-100">
@@ -133,7 +133,7 @@ const VideoHighlight = () => {
               />
 
               {/* Bottom gradient overlay */}
-              <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white/30 to-transparent pointer-events-none" />
+              <div className="absolute bottom-0 left-0 right-0 h-16 bg-linear-to-t from-white/30 to-transparent pointer-events-none" />
             </div>
 
             <div className="absolute -bottom-5 -right-5 w-24 h-24 rounded-full bg-accent/5 blur-xl pointer-events-none" />
