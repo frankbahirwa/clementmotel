@@ -36,15 +36,24 @@ export const metadata = {
   openGraph: {
     title: "Clement Motel | Hospitality & Accommodation in Kibuye",
     description: "Clement Motel at Kibuye, Kibuye, Rwanda along KIVU BELT. Quality accommodation and restaurant services.",
-    url: 'https://clementmotel.com', // Replace with actual domain when deployed
+    url: 'https://clementmotel.com',
     siteName: 'Clement Motel',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/images/logo.png',
+        width: 800,
+        height: 600,
+        alt: 'Clement Motel Logo',
+      }
+    ]
   },
   twitter: {
     card: 'summary_large_image',
     title: "Clement Motel | Hospitality & Accommodation in Kibuye",
     description: "Clement Motel at Kibuye, Kibuye, Rwanda along KIVU BELT.",
+    images: ['/images/logo.png'],
   },
   robots: {
     index: true,
