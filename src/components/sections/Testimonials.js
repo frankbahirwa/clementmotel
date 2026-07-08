@@ -70,7 +70,7 @@ const Testimonials = () => {
         />
 
         {/* Global Review Score Block */}
-        <div className="mx-auto mt-10 mb-8 p-8 bg-white/80 rounded-lg border border-zinc-100 shadow-lg flex flex-col md:flex-row items-center justify-between gap-8 backdrop-blur-md">
+        <div className="mx-auto mt-10 mb-8 p-8 bg-white/80 rounded-lg border border-zinc-100 shadow-sm flex flex-col md:flex-row items-center justify-between gap-8 backdrop-blur-md">
           <div className="text-center md:text-left flex items-center gap-6">
             <div className="w-20 h-20 md:w-24 md:h-24 bg-accent text-white rounded-2xl flex items-center justify-center text-3xl md:text-4xl font-black shadow-lg shrink-0">
               8.0
