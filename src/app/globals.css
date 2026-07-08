@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@source "../components/**/*.{js,jsx}";
+@source "./**/*.js";
+
+/* Force light mode — dark: styles only apply when .dark class is present */
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: var(--font-nunito-sans), ui-sans-serif, system-ui;
+  --font-serif: var(--font-playfair-display), ui-serif, Georgia;
+
+  --color-primary: #0A0F1E;
+  --color-accent: #EAB308;
+  --color-accent-hover: #CA8A04;
+  --color-topbar: #0A0F1E;
+  --color-silk: #F5F5F7;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 dark:bg-black/60 backdrop-blur-xl border border-white/30 dark:border-white/10 shadow-lg;
+  }
+  
+  .glass-dark {
+    @apply bg-zinc-900/80 backdrop-blur-2xl border border-white/10 shadow-2xl;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-32;
+  }
+
+  .nav-glass {
+    @apply bg-white/95 backdrop-blur-3xl;
+  }
+
+  .nav-dark {
+    @apply bg-primary/95 backdrop-blur-2xl text-white;
+  }
+
+  .angled-right {
+    clip-path: polygon(25px 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .angled-left {
+    clip-path: polygon(0 0, 100% 0, calc(100% - 25px) 100%, 0 100%);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
+}
